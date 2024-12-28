@@ -1,0 +1,261 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background-color: #00274d;
+  color: white;
+  padding: 1px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 130px;
+}
+
+/* Desktop Navigation */
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.desktop-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.desktop-nav ul li a:hover {
+  color: #ffd700;
+}
+
+.quote-btn {
+  background-color: #ffd700;
+  color: #00274d;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.quote-btn:hover {
+  background-color: #e6c300;
+}
+
+/* Mobile Navigation */
+.mobile-menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav.active {
+  display: block;
+  background-color: #00274d;
+  padding: 10px 0;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+.mobile-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+}
+
+.mobile-nav ul li a:hover {
+  background-color: #003366;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #e6f7ff;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px; /* Espaço entre texto e imagem */
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #00274d;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  flex: 1;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.service-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #00274d;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00274d;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Media Queries for Mobile and Tablet */
+@media (max-width: 768px) {
+  /* Desktop Nav Hidden */
+  .desktop-nav {
+    display: none;
+  }
+
+  /* Mobile Nav Visible */
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  /* Services Layout */
+  .services {
+    flex-direction: column;
+  }
+
+  .service-card {
+    width: 100%; /* Serviço ocupa toda a largura */
+    margin-bottom: 20px; /* Espaço entre os cards */
+  }
+
+  /* Hero Section */
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 100%; /* A imagem ocupa toda a largura da tela */
+  }
+}
+
+/* Media Queries for Extra Small Devices */
+@media (max-width: 480px) {
+  /* Adjust button font-size and padding */
+  .cta-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Adjust text size in Hero */
+  .hero-text h1 {
+    font-size: 2rem; /* Menor tamanho para títulos */
+  }
+
+  .hero-text p {
+    font-size: 1rem; /* Ajusta o tamanho do parágrafo */
+  }
+}

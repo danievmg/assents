@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrician Services</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="logo.jpg" alt="Logo S.O.S">
+      </div>
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#about">Sobre nos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="#quote" class="quote-btn">Get a Quote</a>
+      <div class="mobile-menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#about">Sobre nos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Expert Electrical Services</h1>
+        <p>Your trusted partner for all residential, commercial, and emergency electrical needs.</p>
+        <a href="#quote" class="cta-btn">Request Service</a>
+      </div>
+      <div class="hero-image">
+        <img src="electrician-working.jpg" alt="Electrician working">
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="service-card">
+        <img src="residential-icon.png" alt="Residential Wiring">
+        <h3>Residential Wiring</h3>
+        <p>Safe and efficient wiring solutions for your home.</p>
+      </div>
+      <div class="service-card">
+        <img src="commercial-icon.png" alt="Commercial Installations">
+        <h3>Commercial Installations</h3>
+        <p>Professional-grade electrical systems for businesses.</p>
+      </div>
+      <div class="service-card">
+        <img src="emergency-icon.png" alt="Emergency Repairs">
+        <h3>Emergency Repairs</h3>
+        <p>24/7 support for urgent electrical issues.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Electrician Pro. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('.mobile-nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
